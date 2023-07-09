@@ -4,7 +4,6 @@ public class Circle extends Shape {
     private double y;
 
     public Circle(double radius, double x, double y) {
-        super("Circle");
         this.radius = radius;
         this.x = x;
         this.y = y;
@@ -36,5 +35,10 @@ public class Circle extends Shape {
 
     public void setY(double y) {
         this.y = y;
+    }
+
+    @Override
+    public String getName() {
+        return "Circle";
     }
 }

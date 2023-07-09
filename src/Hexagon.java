@@ -4,7 +4,6 @@ public class Hexagon extends Shape implements Polygon {
     private double y;
 
     public Hexagon(double sideLength, double x, double y) {
-        super("Hexagon");
         this.sideLength = sideLength;
         this.x = x;
         this.y = y;
@@ -36,5 +35,10 @@ public class Hexagon extends Shape implements Polygon {
 
     public void setY(double y) {
         this.y = y;
+    }
+
+    @Override
+    public String getName() {
+        return "Hexagon";
     }
 }

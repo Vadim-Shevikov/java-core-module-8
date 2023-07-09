@@ -4,7 +4,6 @@ public class Quad extends Shape implements Polygon {
     private double y;
 
     public Quad(double sideLength, double x, double y) {
-        super("Quad");
         this.sideLength = sideLength;
         this.x = x;
         this.y = y;
@@ -36,5 +35,10 @@ public class Quad extends Shape implements Polygon {
 
     public void setY(double y) {
         this.y = y;
+    }
+
+    @Override
+    public String getName() {
+        return "Quad";
     }
 }

@@ -6,12 +6,10 @@ public class Main {
         Shape pentagon = new Pentagon(5, 3,3);
         Shape hexagon = new Hexagon(15, 4,4);
 
-        ShapePrinter shapePrinter = new ShapePrinter();
-
-        shapePrinter.printShapeName(circle);
-        shapePrinter.printShapeName(quad);
-        shapePrinter.printShapeName(triangle);
-        shapePrinter.printShapeName(pentagon);
-        shapePrinter.printShapeName(hexagon);
+        ShapePrinter.printShapeName(circle);
+        ShapePrinter.printShapeName(quad);
+        ShapePrinter.printShapeName(triangle);
+        ShapePrinter.printShapeName(pentagon);
+        ShapePrinter.printShapeName(hexagon);
     }
 }
